@@ -6,11 +6,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class JavaConfig {
-    public String dev;
-
-    public void setDev(String dev) {
-        this.dev = dev;
-    }
 
     @Bean
     @ConditionalOnProperty(value = "org.example.profile.dev", havingValue = "true")
